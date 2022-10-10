@@ -1,0 +1,7 @@
+---
+
+- name: Create Pacemaker cluster
+  hosts: all
+  roles:
+    - role: create-cluster
+

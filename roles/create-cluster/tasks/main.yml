@@ -1,0 +1,5 @@
+---
+# Create Pacemaker cluster
+ 
+- name: Ping test
+  ping:
