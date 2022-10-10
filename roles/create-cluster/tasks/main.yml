@@ -5,3 +5,7 @@
   community.general.rhsm_repository:
     name: rhel-8-for-x86_64-highavailability-rpms
     state: enabled
+
+- name: Call RHEL system role to create cluster
+  include_role:
+    name: redhat.rhel_system_roles.ha_cluster
