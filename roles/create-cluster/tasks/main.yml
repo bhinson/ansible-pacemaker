@@ -1,5 +1,7 @@
 ---
 # Create Pacemaker cluster
  
-- name: Ping test
-  ping:
+- name: Ensure software repositories are enabled
+  community.general.rhsm_repository:
+    name: rhel-8-for-x86_64-highavailability-rpms
+    state: enabled
