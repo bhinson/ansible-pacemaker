@@ -1,6 +1,0 @@
----
-# Destroy Pacemaker cluster
- 
-- name: Call RHEL system role to create cluster
-  include_role:
-    name: redhat.rhel_system_roles.ha_cluster
