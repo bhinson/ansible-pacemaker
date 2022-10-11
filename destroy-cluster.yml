@@ -1,0 +1,7 @@
+---
+
+- name: Destroy Pacemaker cluster
+  hosts: all
+  roles:
+    - role: destroy-cluster
+
