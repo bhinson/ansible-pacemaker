@@ -1,6 +1,11 @@
 ---
 # Create Pacemaker cluster
- 
+
+- name: Install latest version of RHEL system roles
+  ansible.builtin.dnf:
+    name: rhel-system-roles
+    state: latest
+
 - name: Ensure software repositories are enabled
   community.general.rhsm_repository:
     name: rhel-8-for-x86_64-highavailability-rpms
